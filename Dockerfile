@@ -1,17 +1,20 @@
 FROM python:2
 
-RUN pip install tailon
 
-RUN mkdir /tailon
-ADD run.sh /tailon/run.sh
+RUN mkdir /tailon 
+COPY run.sh /tailon/run.sh
 RUN chmod +x /tailon/run.sh
+COPY tailon-0.5.1 /tailon/tailon-0.5.1
+RUN pip install /tailon/tailon-0.5.1
 
-RUN apt-get clean && rm -rf /var/lib/apt/lists/*
+VOLUME ["/data"]
 
-EXPOSE 8084
+EXPOSE 8080
 
 WORKDIR "/tailon"
 
 CMD ["/tailon/run.sh"]
 
-# docker run -it --rm -p 8084:8084 -e "BASE=/PATH_TO_LOG /PATH_TO_LOG" --volumes-from CONTAINER_NAME ipedrazas/tailon 
+USER nobody
+
+# docker run -it --rm -p 8080:8084 --volumes-from CONTAINER_NAME sago007/tailon 
