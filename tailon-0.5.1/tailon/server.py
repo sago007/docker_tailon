@@ -175,6 +175,8 @@ class WebsocketCommands(SockJSConnection):
                 var.stdout.close()
                 var.stderr.close()
                 var.proc.kill()
+                var.proc.wait()
+                var.proc = None
                 var = None
 
     def on_message(self, message):
