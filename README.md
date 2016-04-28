@@ -24,3 +24,7 @@ docker run -it -v /var/log:/data -v /etc:/data1 --user=1000 -p 8084:8080 sago007
 This exposes both /var/log and /etc
 
 Be warned that these commands are designed for easy testing. On production you do not want to expose /var/log and /etc like that!
+
+This version contains pathes for:
+https://github.com/gvalkov/tailon/issues/26
+https://github.com/gvalkov/tailon/issues/25

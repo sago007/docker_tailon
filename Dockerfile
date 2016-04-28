@@ -17,4 +17,4 @@ CMD ["/tailon/run.sh"]
 
 USER nobody
 
-# docker run -it --rm -p 8080:8084 --volumes-from CONTAINER_NAME sago007/tailon 
+# docker run -it -v /var/log:/data --user=1000 -p 8084:8080 sago007/docker_tailon
