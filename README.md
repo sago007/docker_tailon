@@ -1,4 +1,4 @@
-docker-tailon
+docker_tailon
 =============
 
 I needed a simple tailon what I could patch.
@@ -13,13 +13,13 @@ For an Ubuntu system running as a user that are part of the "adm" group.
 
 The following command will expose /var/log on port 8084 on the local machine:
 ```
-docker run -it -v /var/log:/data --user=1000 -p 8084:8080 sago007/tailon
+docker run -it -v /var/log:/data --user=1000 -p 8084:8080 sago007/docker_tailon
 ```
 
 
 You can watch multiple volumes like this:
 ```
-docker run -it -v /var/log:/data -v /etc:/data1 --user=1000 -p 8084:8080 sago007/tailon /tailon/run.sh "/data1"
+docker run -it -v /var/log:/data -v /etc:/data1 --user=1000 -p 8084:8080 sago007/docker_tailon /tailon/run.sh "/data1"
 ```
 This exposes both /var/log and /etc
 
