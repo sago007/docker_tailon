@@ -25,6 +25,20 @@ This exposes both /var/log and /etc
 
 Be warned that these commands are designed for easy testing. On production you do not want to expose /var/log and /etc like that!
 
+# Patches
+
 This version contains pathes for:
 https://github.com/gvalkov/tailon/issues/26
 https://github.com/gvalkov/tailon/issues/25
+
+# Version numbers
+
+Versions are on the format:
+A.X.Y.Z.B
+
+ * A is the major number for sago007/docker_tailon. This is only changed if I break backwards compability. Note that it can also be broken if Tailon breaks it!
+ * X.Y.Z is the Tailon version number.
+ * B is the minor update. It is increased for any smaller change or patch. 
+ 
+Example:
+1.0.5.1.2 is the first major version. It is build on Tailon 0.5.1 and it is patched compared to 1.0.5.1.1.
