@@ -27,9 +27,7 @@ Be warned that these commands are designed for easy testing. On production you d
 
 # Patches
 
-This version contains pathes for:
-https://github.com/gvalkov/tailon/issues/26
-https://github.com/gvalkov/tailon/issues/25
+This version does not contain patches.
 
 # Version numbers
 
