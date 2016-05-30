@@ -1,5 +1,6 @@
 docker_tailon
 =============
+[![](https://imagelayers.io/badge/sago007/docker_tailon:latest.svg)](https://imagelayers.io/?images=sago007/docker_tailon:latest 'Get your own badge on imagelayers.io')
 
 I needed a simple tailon what I could patch.
 This is based on ipedrazas/tailon
