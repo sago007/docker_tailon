@@ -4,8 +4,8 @@ FROM python:2
 RUN mkdir /tailon 
 COPY run.sh /tailon/run.sh
 RUN chmod +x /tailon/run.sh
-COPY tailon-0.5.1 /tailon/tailon-0.5.1
-RUN pip install /tailon/tailon-0.5.1
+COPY tailon-0.6.0 /tailon/tailon-0.6.0
+RUN pip install /tailon/tailon-0.6.0
 
 VOLUME ["/data"]
 

@@ -25,6 +25,9 @@ This exposes both /var/log and /etc
 
 Be warned that these commands are designed for easy testing. On production you do not want to expose /var/log and /etc like that!
 
-This version contains pathes for:
-https://github.com/gvalkov/tailon/issues/26
-https://github.com/gvalkov/tailon/issues/25
+Versions
+========
+
+1.0.5.1.1 - Unmodified Tailon 0.5.1
+1.0.5.1.2 - Tailon 0.5.1 with two patches
+1.0.6.0.1 - Unmodified Tailon 0.6.0
