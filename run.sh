@@ -1,4 +1,4 @@
-#! /bin/bash
+#! /bin/ash
 
 # BASE_LOG=$(mount | grep /dev/ | awk '{print $3}' | tail -n +4 | sed 's/$/\/*/' | tr "\\n" " ")
 

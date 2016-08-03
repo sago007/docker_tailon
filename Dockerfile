@@ -1,5 +1,6 @@
-FROM python:2
+FROM alpine:3.4
 
+RUN apk add --no-cache python py-pip grep gawk
 
 RUN mkdir /tailon 
 COPY run.sh /tailon/run.sh
