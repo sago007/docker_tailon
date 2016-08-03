@@ -3,7 +3,10 @@ docker_tailon
 [![](https://imagelayers.io/badge/sago007/docker_tailon:latest.svg)](https://imagelayers.io/?images=sago007/docker_tailon:latest 'Get your own badge on imagelayers.io')
 
 I needed a simple tailon what I could patch.
+
 This is based on ipedrazas/tailon
+
+Tailon is here: https://github.com/gvalkov/tailon
 
 First run a conatiner you want to capture the logs from. If your conatiner was not given a name, grab the name and pass it to the Tailon container.
 
