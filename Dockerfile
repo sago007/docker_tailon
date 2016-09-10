@@ -5,8 +5,8 @@ RUN apk add --no-cache python py-pip grep gawk
 RUN mkdir /tailon 
 COPY run.sh /tailon/run.sh
 RUN chmod +x /tailon/run.sh
-COPY tailon-0.6.0 /tailon/tailon-0.6.0
-RUN pip install /tailon/tailon-0.6.0
+COPY tailon-1.0.0 /tailon/tailon-1.0.0
+RUN pip install /tailon/tailon-1.0.0
 
 VOLUME ["/data"]
 
